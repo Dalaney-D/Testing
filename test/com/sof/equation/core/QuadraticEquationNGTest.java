@@ -22,9 +22,9 @@ public class QuadraticEquationNGTest {
      */
     @Test
     public void testQuadraticEquationGivenRightArgumentReturnWell() {
-        double a = 2.0;
+        double a = 2;
         double b = 0;
-        double c = -4.0;
+        double c = -4;
         double[] expResult = {sqrt(2), -sqrt(2)};
         double[] result = QuadraticEquation.calculateQuadraticEquation(a, b, c);
         assertEquals(result, expResult);
@@ -32,19 +32,19 @@ public class QuadraticEquationNGTest {
 
     @Test
     public void testQuadraticEquationGivenRightArgumentReturnWell2() {
-        double a = 1.0;
-        double b = -4.0;
-        double c = 4.0;
-        double[] expResult = {2.0};
+        double a = 1;
+        double b = -4;
+        double c = 4;
+        double[] expResult = {2};
         double[] result = QuadraticEquation.calculateQuadraticEquation(a, b, c);
         assertEquals(result, expResult);
     }
 
     @Test(expectedExceptions = IllegalArgumentException.class)
     public void testQuadraticEquationGivenRightArgumentReturnWell3() {
-        double a = 3.0;
-        double b = 2.0;
-        double c = 5.0;
+        double a = 3;
+        double b = 2;
+        double c = 5;
         double[] expResult = {};
         double[] result = QuadraticEquation.calculateQuadraticEquation(a, b, c);
         assertEquals(result, expResult);

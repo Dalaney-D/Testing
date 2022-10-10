@@ -20,7 +20,7 @@ public class FirstOrderEquationNGTest {
     /**
      * Test of firstOrderEquation method, of class firstOrderEquation.
      */
-    @Test(description = "Success")
+    @Test
     public void testFirstOrderEquationGivenRightArgumentReturnWell() {
         System.out.println("firstOrderEquation");
         int a = 2;
