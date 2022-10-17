@@ -2,8 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/UnitTests/EmptyTestNGTest.java to edit this template
  */
-package com.sof.equation.core;
+package com.sof.equation.TestNG;
 
+import com.sof.equation.core.QuadraticEquation;
 import static java.lang.Math.sqrt;
 import static org.testng.Assert.*;
 import org.testng.annotations.Test;
@@ -12,9 +13,9 @@ import org.testng.annotations.Test;
  *
  * @author dell
  */
-public class QuadraticEquationNGTest {
+public class QuadraticEquationTestNG {
 
-    public QuadraticEquationNGTest() {
+    public QuadraticEquationTestNG() {
     }
 
     /**
