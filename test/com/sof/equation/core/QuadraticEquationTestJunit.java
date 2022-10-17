@@ -17,27 +17,29 @@ public class QuadraticEquationTestJunit {
     @Test
     public void testQuadraticEquationGivenRightArgumentReturnWell(){
         double[] expected1 = {6 , 2};
+        double[] actual1 = {1, -8, 12};
         Assert.assertArrayEquals(expected1, QuadraticEquation.calculateQuadraticEquation(1, -8, 12), 0);
         double[] expected2 = {-2};
         Assert.assertArrayEquals(expected2, QuadraticEquation.calculateQuadraticEquation(2, 8, 8), 0);
         double[] expected3 = {Math.sqrt(2), -Math.sqrt(2)};
+        
         Assert.assertArrayEquals(expected3, QuadraticEquation.calculateQuadraticEquation(2, 0, -4), 0);
     }
     
     
     
-    @Test(expected = IllegalArgumentException.class)
-    public void testQuadraticEquationGivenWtrongExpectedReturnException(){
-        //trường hợp expected đặt sai vị trí 
-        //cách fix: 1. thay đổi vị trí 2 số (cực mà hàm lại không chắc chắn)
-        //          2. sửa lại hàm calculateQuadraticEquation 
-        double[] expected = {2 , 6};
-        Assert.assertArrayEquals(expected, QuadraticEquation.calculateQuadraticEquation(1, -8, 12), 0);
-        //trường hợp expected do tester nhập sai
-        //double[] expected2 = {-5};
-        //tester lại nhập là -5 ->  nghiệm là {-2} 
-        //Assert.assertArrayEquals(expected2, QuadraticEquation.calculateQuadraticEquation(2, 8, 8), 0);
-    }
+//    @Test(expected = IllegalArgumentException.class)
+//    public void testQuadraticEquationGivenWtrongExpectedReturnException(){
+//        //trường hợp expected đặt sai vị trí 
+//        //cách fix: 1. thay đổi vị trí 2 số (cực mà hàm lại không chắc chắn)
+//        //          2. sửa lại hàm calculateQuadraticEquation 
+//        double[] expected = {2 , 6};
+//        Assert.assertArrayEquals(expected, QuadraticEquation.calculateQuadraticEquation(1, -8, 12), 0);
+//        //trường hợp expected do tester nhập sai
+//        //double[] expected2 = {-5};
+//        //tester lại nhập là -5 ->  nghiệm là {-2} 
+//        //Assert.assertArrayEquals(expected2, QuadraticEquation.calculateQuadraticEquation(2, 8, 8), 0);
+//    }
     
     @Test(expected = IllegalArgumentException.class)
     public void testQuadraticEquationGivenWtrongArgumentReturnException(){

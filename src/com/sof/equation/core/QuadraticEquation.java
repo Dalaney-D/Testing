@@ -14,7 +14,13 @@ public class QuadraticEquation {
         double delta = Math.pow(b, 2) - 4 * a * c;
         System.out.println("QuadraticEquation: " + a + "x^2 + " + b + "x + " + c);
         if (a == 0) {
-                throw new IllegalArgumentException("The equation has no solution.");
+            if(b == 0){
+               throw new IllegalArgumentException("The equation has no solution."); 
+            }else{
+                double x = (-c / b);
+                return new double[]{x};
+            }
+                
         } else {
                 if (delta < 0) {
                     throw new IllegalArgumentException("The equation has no solution.");
