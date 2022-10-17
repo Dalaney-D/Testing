@@ -2,9 +2,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/UnitTests/EmptyTestNGTest.java to edit this template
  */
-package com.sof.equation.testNG;
+package com.sof.equation.core;
 
-import com.sof.equation.core.QuadraticEquation;
 import static java.lang.Math.sqrt;
 import static org.testng.Assert.*;
 import org.testng.annotations.Test;
