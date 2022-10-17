@@ -18,7 +18,6 @@ public class QuadraticEquationJUnit {
     @Test
     public void testQuadraticEquationGivenRightArgumentReturnWell(){
         double[] expected1 = {6 , 2};
-        double[] actual1 = {1, -8, 12};
         Assert.assertArrayEquals(expected1, QuadraticEquation.calculateQuadraticEquation(1, -8, 12), 0);
         double[] expected2 = {-2};
         Assert.assertArrayEquals(expected2, QuadraticEquation.calculateQuadraticEquation(2, 8, 8), 0);
