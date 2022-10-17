@@ -2,8 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/UnitTests/EmptyTestNGTest.java to edit this template
  */
-package com.sof.equation.core;
+package com.sof.equation.testNG;
 
+import com.sof.equation.core.FirstOrderEquation;
 import org.testng.Assert;
 import static org.testng.Assert.*;
 import org.testng.annotations.Test;
