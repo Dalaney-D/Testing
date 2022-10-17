@@ -3,9 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/kiety/Desktop/Testing/test/com/sof/equation/JUnit/QuadraticEquationJUnit.java</file>
-            <file>file:/C:/Users/kiety/Desktop/Testing/src/com/sof/equation/core/QuadraticEquation.java</file>
-            <file>file:/C:/Users/kiety/Desktop/Testing/test/com/sof/equation/TestNG/QuadraticEquationTestNG.java</file>
+            <file>file:/C:/Users/duyng/Desktop/SWT/Testing/test/com/sof/equation/JUnit/FirstOrderEquationJUnit.java</file>
+            <file>file:/C:/Users/duyng/Desktop/SWT/Testing/nbproject/build-impl.xml</file>
+            <file>file:/C:/Users/duyng/Desktop/SWT/Testing/test/com/sof/equation/TestNG/QuadraticEquationTestNG.java</file>
+            <file>file:/C:/Users/duyng/Desktop/SWT/Testing/test/com/sof/equation/JUnit/QuadraticEquationJUnit.java</file>
         </group>
     </open-files>
 </project-private>

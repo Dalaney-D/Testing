@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+ 
+<suite name="Suite1" verbose="1" >
+  <test name="Regression1"   >
+    <packages>
+      <include name="testFirstOrderEquationGivenRightArgumentReturnWell"></include>
+      <include name="testFirstOrderEquationGivenWrongArgumentThrowException"></include>
+      <include name="testQuadraticEquationGivenRightArgumentReturnWell"></include>
+      <include name="testQuadraticEquationGivenRightArgumentReturnWell2"></include>
+      <include name="testQuadraticEquationGivenRightArgumentReturnWell3"></include>
+      <include name="testQuadraticEquationGivenRightArgumentReturnWell4"></include>
+      <include name="testQuadraticEquationGivenWtrongArgumentReturnException"></include>
+   </packages>
+ </test>
+</suite>

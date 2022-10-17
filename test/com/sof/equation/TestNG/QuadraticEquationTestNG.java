@@ -22,6 +22,7 @@ public class QuadraticEquationTestNG {
      * Test of getEquation2 method, of class quadraticEquation.
      */
     @Test
+    //detal > 0
     public void testQuadraticEquationGivenRightArgumentReturnWell() {
         double a = 2;
         double b = 0;
@@ -31,6 +32,7 @@ public class QuadraticEquationTestNG {
         assertEquals(result, expResult);
     }
 
+    //detal = 0
     @Test
     public void testQuadraticEquationGivenRightArgumentReturnWell2() {
         double a = 1;
@@ -41,6 +43,7 @@ public class QuadraticEquationTestNG {
         assertEquals(result, expResult);
     }
 
+    //detal < 0
     @Test(expectedExceptions = IllegalArgumentException.class)
     public void testQuadraticEquationGivenRightArgumentReturnWell3() {
         double a = 3;
@@ -51,9 +54,21 @@ public class QuadraticEquationTestNG {
         assertEquals(result, expResult);
     }
 
+    //a = 0 , b # 0
+    @Test
+    public void testQuadraticEquationGivenRightArgumentReturnWell4() {
+        double a = 0;
+        double b = -4;
+        double c = 4;
+        double[] expResult = {1};
+        double[] result = QuadraticEquation.calculateQuadraticEquation(a, b, c);
+        assertEquals(result, expResult);
+    }
+    
+    //a = 0, b = 0
      @Test(expectedExceptions = IllegalArgumentException.class)
     public void testQuadraticEquationGivenWtrongArgumentReturnException(){
-        QuadraticEquation.calculateQuadraticEquation(0, -4, 4);
+        QuadraticEquation.calculateQuadraticEquation(0, 0, 4);
     }
     
 }
